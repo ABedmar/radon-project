@@ -21,7 +21,7 @@ Using trim galore...
 Generate maf files
 Mergethe maf files and use maftools to create noseque...
 
-'''
+```
 #module load gcc/8.1.0 pcre2/10.35 R/4.0.3
 
 library(maftools)
@@ -32,6 +32,6 @@ laml.mutload = tcgaCompare(maf = maf, cohortName = 'Radon-LAML', logscale = TRUE
 
 rb=(laml.mutload$mutation_burden_perSample)
 rb= rb[rb$cohort == "Radon-LAML",]
-'''
+```
 
 rn contains a table with the maf samples and all of their TMB.
