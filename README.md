@@ -9,6 +9,24 @@ With MultiQC...
 ## Trimming
 Using trim galore...
 
+## Normalization of the data
+```
+library("limma")
+library("edgeR")
+counts <- read.csv(file = "matrix.csv", sep = ";", header = T)
+rownames(counts) <- counts[,1]
+counts <- counts[,-1]
+counts <- data.matrix(counts)
+
+dge <- DGEList(counts=counts)
+design <- model.matrix(~ 0+factor(colnames(counts)))
+keep <- filterByExpr(dge, design)
+dge <- dge[keep,,keep.lib.sizes=FALSE]
+dge <- calcNormFactors(dge)
+v <- voom(dge, design, plot=TRUE)
+topTable(fit, coef=ncol(design))
+write.table(v$E,file = "counts_normalized.txt", sep = "\t") 
+```
 
 ## Deconvolution
 
