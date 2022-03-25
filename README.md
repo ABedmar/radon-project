@@ -3,5 +3,8 @@ Retrospective analyis of radon induced lung cancer rats
 
 
 
-# Quality control
+## Quality control
 With MultiQC...
+
+## Trimming
+Using trim galore...
