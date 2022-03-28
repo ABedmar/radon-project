@@ -33,7 +33,7 @@ done
 ### Normalization
 
 [limma](https://bioconductor.org/packages/release/bioc/html/limma.html) is a package for the analysis of gene expression data arising from microarray or RNA-seq
-technologies,and [edgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html) implements a range of statistical methodology based on the negative binomial distributions, including empirical Bayes estimation, exact tests, generalized linear models and quasi-likelihood tests. With this packages we can normalize our data
+technologies, and [edgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html) implements a range of statistical methodology based on the negative binomial distributions, including empirical Bayes estimation, exact tests, generalized linear models and quasi-likelihood tests. With this packages we can normalize our data
 ```
 library("limma")
 library("edgeR")
