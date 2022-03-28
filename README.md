@@ -51,8 +51,8 @@ v <- voom(dge, design, plot=TRUE)
 topTable(fit, coef=ncol(design))
 write.table(v$E,file = "counts_normalized.txt", sep = "\t") 
 ```
-![no normalized](https://github.com/[ABedmar]/[radon-project]/images/no_norm.png?raw=true)
-![normalized](https://github.com/[ABedmar]/[radon-project]/images/norm.png?raw=true)
+![no normalized](https://github.com/ABedmar/radon-project/tree/main/images?raw=true)
+![normalized](https://github.com/ABedmar/radon-project/tree/main/images?raw=true)
 
 ## Analysis
 
