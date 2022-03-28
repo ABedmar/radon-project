@@ -56,11 +56,14 @@ write.table(v$E,file = "counts_normalized.txt", sep = "\t")
 <p align="center">
     Not normalized samples
 </p>
-
+<br/><br/>
+<br/><br/>
 ![normalized](https://github.com/ABedmar/radon-project/blob/main/images/norm.png)
 <p align="center">
     Normalized samples
 </p>
+<br/><br/>
+<br/><br/>
 
 ## Analysis
 
