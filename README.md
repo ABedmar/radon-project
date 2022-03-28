@@ -4,7 +4,7 @@ Retrospective analyis of radon induced lung cancer rats
 
 ## Pipeline
 ### Quality control
-[MultiQC](https://github.com/ewels/MultiQC) is a tool to create a single report with interactive plots for multiple bioinformatics analyses across many samples. We can analyze our whole set of samples, included the trimmed ones with this tool.
+[MultiQC](https://github.com/ewels/MultiQC) is a tool used to create a single report with interactive plots for multiple bioinformatics analyses across many samples. We can analyze our whole set of samples, included the trimmed ones with this tool.
 You can use MultiQC by navigating to the desired analysis directory and running the tool:
 ```
 multiqc .
