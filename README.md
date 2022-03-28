@@ -73,7 +73,7 @@ write.table(v$E,file = "counts_normalized.txt", sep = "\t")
 
 ### Gene expression analyis
 [GSEA](https://www.gsea-msigdb.org/gsea/index.jsp) is a computational method that determines whether an a priori defined set of genes shows statistically
-significant, concordant differences between two biological states. To compare enriched gene sets acording to radon exposure we create the file containing phenotypes `phenotype_labels_ALL_c.cls`
+significant, concordant differences between two biological states. To compare enriched gene sets acording to radon exposure we create the file containing phenotypes `phenotype_labels_ALL_c.cls`.
 
 ### TMB
 
