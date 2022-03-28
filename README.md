@@ -2,14 +2,19 @@
 Retrospective analyis of radon induced lung cancer rats
 
 
+## Pipeline
+### Quality control
+[MultiQC](https://github.com/ewels/MultiQC) is a tool to create a single report with interactive plots for multiple bioinformatics analyses across many samples. We can analyze our whole set of samples, included the trimmed ones with this tool.
+You can use MultiQC by navigating to the desired analysis directory and running the tool:
+```
+multiqc .
+```
+The report is created in `multiqc_report.html`
 
-## Quality control
-With MultiQC...
-
-## Trimming
+### Trimming
 Using trim galore...
 
-## Normalization of the data
+### Normalization
 ```
 library("limma")
 library("edgeR")
@@ -28,13 +33,15 @@ topTable(fit, coef=ncol(design))
 write.table(v$E,file = "counts_normalized.txt", sep = "\t") 
 ```
 
-## Deconvolution
+## Analysis
+
+### Deconvolution
 
 
-## Gene expression analyis
+### Gene expression analyis
 
 
-## TMB
+### TMB
 
 Generate maf files
 Mergethe maf files and use maftools to create noseque...
