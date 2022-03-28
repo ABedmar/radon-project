@@ -12,7 +12,23 @@ multiqc .
 The report is created in `multiqc_report.html`
 
 ### Trimming
-Using trim galore...
+[Trim Galore](https://github.com/FelixKrueger/TrimGalore) is a wrapper around [Cutadapt](https://github.com/marcelm/cutadapt) and [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) to consistently apply adapter and quality trimming to FastQ files.
+```
+module load intel python java trimgalore
+
+for bam in fastq/*.fastqc.gz; do
+
+nameHeader=$(basename ${fastqc/_R1.fastq.gz/})
+
+echo " 
+
+trim_galore --illumina --paired --trim1 $nameHeader ${nameHeader/_R1/_R2} -o trimmed/$(basename ${nameHeader/_R1.fastq.gz/})
+
+" >> /slgpfs/projects/idib57/GA_002_21_Radon/sbatch.12h.cpt1 ;
+sbatch /slgpfs/projects/idib57/GA_002_21_Radon/sbatch.12h.cpt1 ;
+sed -i '10,$d' /slgpfs/projects/idib57/GA_002_21_Radon/sbatch.12h.cpt1 ;
+done
+```
 
 ### Normalization
 ```
