@@ -76,8 +76,10 @@ write.table(v$E,file = "counts_normalized.txt", sep = "\t")
 
 ### TMB
 
-Generate maf files
-Mergethe maf files and use maftools to create noseque...
+[maftools](https://github.com/PoisonAlien/maftools) provides a comprehensive set of functions for processing [MAF](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/) files and to perform most commonly used analyses in cancer genomics. 
+
+The function `tcgaCompare` uses mutation load from TCGA [MC3](https://gdc.cancer.gov/about-data/publications/mc3-2017) for comparing muttaion burden against 33 TCGA cohorts. 
+In this particular case we are only interested in the TMB of our samples:
 
 ```
 #module load gcc/8.1.0 pcre2/10.35 R/4.0.3
