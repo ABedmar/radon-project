@@ -94,4 +94,4 @@ rb=(laml.mutload$mutation_burden_perSample)
 rb= rb[rb$cohort == "Radon-LAML",]
 ```
 
-rn contains a table with the maf samples and all of their TMB.
+rb is a table containing all samples and their TMB.
