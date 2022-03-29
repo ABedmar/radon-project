@@ -2,14 +2,14 @@
 Retrospective analyis of radon induced lung cancer in rats
 
 ### Table of contents
-[Pipeline](https://github.com/ABedmar/radon-project/blob/main/README.md#pipeline)
-[Quality control](https://github.com/ABedmar/radon-project/blob/main/README.md#Quality_control)
-[Trimming](https://github.com/ABedmar/radon-project/blob/main/README.md#Trimming)
-[Normalization](https://github.com/ABedmar/radon-project/blob/main/README.md#Normalization)
-[Analysis](https://github.com/ABedmar/radon-project/blob/main/README.md#Analysis)
-[Deconvolution](https://github.com/ABedmar/radon-project/blob/main/README.md#Deconvolution)
-[Gene expression analysis](https://github.com/ABedmar/radon-project/blob/main/README.md#Gene_expression_analysis)
-[TMB](https://github.com/ABedmar/radon-project/blob/main/README.md#TMB)
+- [Pipeline](https://github.com/ABedmar/radon-project/blob/main/README.md#pipeline)
+    - [Quality control](https://github.com/ABedmar/radon-project/blob/main/README.md#Quality_control)
+    - [Trimming](https://github.com/ABedmar/radon-project/blob/main/README.md#Trimming)
+    - [Normalization](https://github.com/ABedmar/radon-project/blob/main/README.md#Normalization)
+- [Analysis](https://github.com/ABedmar/radon-project/blob/main/README.md#Analysis)
+    - [Deconvolution](https://github.com/ABedmar/radon-project/blob/main/README.md#Deconvolution)
+    - [Gene expression analysis](https://github.com/ABedmar/radon-project/blob/main/README.md#Gene_expression_analysis)
+    - [TMB](https://github.com/ABedmar/radon-project/blob/main/README.md#TMB)
 
 ## Pipeline
 ### Quality control
