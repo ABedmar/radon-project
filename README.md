@@ -1,5 +1,5 @@
 # radon-project
-Retrospective analyis of radon induced lung cancer in rats
+Retrospective analyis of radon induced lung cancer in rats. This analysis has the objective of describeing the tumor molecular profile related to the immune profile of radon-induced lung cancer vs. spontaneous lung cancer in rats and to characterize pathologically and transcriptomically all the TME in lung primary tumors with a particular interest in CD8+ T cells (inflamed-TME) in rats exposed or not to radon.
 
 ## Table of contents
 - [Pipeline](https://github.com/ABedmar/radon-project/blob/main/README.md#pipeline)
