@@ -1,7 +1,7 @@
 # radon-project
 Retrospective analyis of radon induced lung cancer in rats
 
-### Table of contents
+## Table of contents
 - [Pipeline](https://github.com/ABedmar/radon-project/blob/main/README.md#pipeline)
     - [Quality control](https://github.com/ABedmar/radon-project/blob/main/README.md#Quality_control)
     - [Trimming](https://github.com/ABedmar/radon-project/blob/main/README.md#Trimming)
