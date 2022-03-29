@@ -95,4 +95,4 @@ rb=(laml.mutload$mutation_burden_perSample)
 rb= rb[rb$cohort == "Radon-LAML",]
 ```
 
-rb is a table containing all samples and their TMB.
+`rb` is a table containing all samples and their TMB.
