@@ -1,6 +1,15 @@
 # radon-project
 Retrospective analyis of radon induced lung cancer in rats
 
+### Table of contents
+[Pipeline](url)
+[Quality control](url)
+[Trimming](url)
+[Normalization](url)
+[Analysis](url)
+[Deconvolution](url)
+[Gene expression analysis](url)
+[TMB](url)
 
 ## Pipeline
 ### Quality control
@@ -76,7 +85,7 @@ write.table(v$E,file = "counts_normalized.txt", sep = "\t")
 significant, concordant differences between two biological states. To compare enriched gene sets acording to radon exposure we create the file containing phenotypes `phenotype_labels_ALL_c.cls`.
 
 ### TMB
-
+Tumor mutational burden is the total number of mutations (changes) found in the DNA of cancer cells.Tumor mutational burden is being used as a type of biomarker and in this analysis we use the following tool to obtain it.
 [maftools](https://github.com/PoisonAlien/maftools) provides a comprehensive set of functions for processing [MAF](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/) files and to perform most commonly used analyses in cancer genomics. 
 
 The function `tcgaCompare` uses mutation load from TCGA [MC3](https://gdc.cancer.gov/about-data/publications/mc3-2017) for comparing muttaion burden against 33 TCGA cohorts. 
