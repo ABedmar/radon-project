@@ -1,5 +1,5 @@
 # radon-project
-Retrospective analyis of radon induced lung cancer rats
+Retrospective analyis of radon induced lung cancer in rats
 
 
 ## Pipeline
