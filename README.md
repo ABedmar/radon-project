@@ -81,6 +81,7 @@ write.table(v$E,file = "counts_normalized.txt", sep = "\t")
 # Analysis
 
 ## Deconvolution
+Deconvolution refers to separating a heterogeneous mixture signal into its components. We are interested in deconvolution because we want to define the pathological and transcriptomic immune profile of the TME of radon-induced vs. spontaneous lung cancer in rats, to identify the specific immune patterns associated with radon.
 
 
 ## Gene expression analyis
