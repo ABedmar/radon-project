@@ -5,6 +5,7 @@ Retrospective analyis of radon induced lung cancer in rats. This analysis has th
 - [Pipeline](https://github.com/ABedmar/radon-project/blob/main/README.md#pipeline)
     - [Quality control](https://github.com/ABedmar/radon-project/blob/main/README.md#Quality_control)
     - [Trimming](https://github.com/ABedmar/radon-project/blob/main/README.md#Trimming)
+    - [BAM files](url)
     - [Normalization](https://github.com/ABedmar/radon-project/blob/main/README.md#Normalization)
 - [Analysis](https://github.com/ABedmar/radon-project/blob/main/README.md#Analysis)
     - [Deconvolution](https://github.com/ABedmar/radon-project/blob/main/README.md#Deconvolution)
