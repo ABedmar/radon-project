@@ -86,6 +86,12 @@ write.table(v$E,file = "counts_normalized.txt", sep = "\t")
 ## Gene expression analyis
 [GSEA](https://www.gsea-msigdb.org/gsea/index.jsp) is a computational method that determines whether an a priori defined set of genes shows statistically
 significant, concordant differences between two biological states. To compare enriched gene sets acording to radon exposure we create the file containing phenotypes `phenotype_labels_ALL_c.cls`.
+GSEA Desktop is a free genomic analysis program written in the Java(tm) language implementing the GSEA method while providing preprocessing tools along with further analysis methods and visualizations.
+Specifically, for this analysis we used the following parameters:
+- Gene set database: `c2.all.v7.5.1.symbols.gmt`
+- Number of permutations: 1000
+- Collapse to gene symbols
+- Chip platform: `Rat_Ensembl_Transcript_ID_Human_Orthologs_MSigDB.v7.5.1.chip`
 
 ## TMB
 Tumor mutational burden is the total number of mutations (changes) found in the DNA of cancer cells.Tumor mutational burden is being used as a type of biomarker and in this analysis we use the following tool to obtain it.
