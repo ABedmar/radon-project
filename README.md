@@ -38,6 +38,8 @@ sbatch /slgpfs/projects/idib57/GA_002_21_Radon/sbatch.12h.cpt1 ;
 sed -i '10,$d' /slgpfs/projects/idib57/GA_002_21_Radon/sbatch.12h.cpt1 ;
 done
 ```
+## BAM files
+
 
 ## Normalization
 
@@ -106,6 +108,17 @@ sed -i '10,$d' /home/idib57/idib57798/scripts/sbatch/sbatch.1h.cpt1
 
 done
 ```
+
+Now we merge all the MAF files using the function `merge_mafs`.
+
+```
+setwd("/slgpfs/projects/idib57/giancarlo/radon/WES/vep_merged_filtered_nopolimorph")
+library(maftools)
+
+files=dir(pattern=".maf$")maf=merge_mafs(files)
+maf=merge_mafs(files)
+```
+
 
 The function `tcgaCompare` uses mutation load from TCGA [MC3](https://gdc.cancer.gov/about-data/publications/mc3-2017) for comparing muttaion burden against 33 TCGA cohorts. 
 In this particular case we are only interested in the TMB of our samples:
