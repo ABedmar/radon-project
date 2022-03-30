@@ -88,6 +88,25 @@ significant, concordant differences between two biological states. To compare en
 Tumor mutational burden is the total number of mutations (changes) found in the DNA of cancer cells.Tumor mutational burden is being used as a type of biomarker and in this analysis we use the following tool to obtain it.
 [maftools](https://github.com/PoisonAlien/maftools) provides a comprehensive set of functions for processing [MAF](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/) files and to perform most commonly used analyses in cancer genomics. 
 
+To get the [MAF](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/) files we convert [VCF](http://samtools.github.io/hts-specs/) files with [vcf2maf](https://github.com/mskcc/vcf2maf).
+
+```
+module load htslib/1.10.2 intel/2018.3 bcftools/1.10.2  perl/5.26.2 gcc/8.1.0 vep/97.3 samtools/1.9 vcf2maf
+
+genome=/slgpfs/projects/idib57/data/genome/Rattus/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa
+
+for vcf in *.vcf; do
+echo "
+
+vcf2maf --input-vcf $vcf --output-maf ${vcf/.vcf/.maf} --tumor-id ${vcf/.vcf/} --ref-fasta $genome --vep-overwrite
+
+" >> /home/idib57/idib57798/scripts/sbatch/sbatch.1h.cpt1 ;
+sbatch < /home/idib57/idib57798/scripts/sbatch/sbatch.1h.cpt1 ;
+sed -i '10,$d' /home/idib57/idib57798/scripts/sbatch/sbatch.1h.cpt1
+
+done
+```
+
 The function `tcgaCompare` uses mutation load from TCGA [MC3](https://gdc.cancer.gov/about-data/publications/mc3-2017) for comparing muttaion burden against 33 TCGA cohorts. 
 In this particular case we are only interested in the TMB of our samples:
 
