@@ -74,7 +74,9 @@ write.table(v$E,file = "counts_normalized.txt", sep = "\t")
 
 <br/><br/>
 
-![normalized](https://github.com/ABedmar/radon-project/blob/main/images/norm.png)
+<p align="center">
+    <img src="https://github.com/ABedmar/radon-project/blob/main/images/norm.png" width="800" height="300">
+</p>
 <p align="center">
     Normalized samples
 </p>
