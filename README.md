@@ -81,8 +81,7 @@ write.table(v$E,file = "counts_normalized.txt", sep = "\t")
 # Analysis
 
 ## Deconvolution
-Deconvolution refers to separating a heterogeneous mixture signal into its components. We are interested in deconvolution because we want to define the pathological and transcriptomic immune profile of the TME of radon-induced vs. spontaneous lung cancer in rats, to identify the specific immune patterns associated with radon.
-
+Deconvolution refers to separating a heterogeneous mixture signal into its components. We are interested in deconvolution because we want to define the pathological and transcriptomic immune profile of the TME of radon-induced vs. spontaneous lung cancer in rats, to identify the specific immune patterns associated with radon. [EcoTyper](https://www.sciencedirect.com/science/article/abs/pii/S0092867421010618?via%3Dihub) is a framework for systematically identifying cell states and cellular communities (ecotypes) from gene expression data.
 
 ## Gene expression analyis
 [GSEA](https://www.gsea-msigdb.org/gsea/index.jsp) is a computational method that determines whether an a priori defined set of genes shows statistically
