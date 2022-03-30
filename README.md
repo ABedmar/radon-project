@@ -109,6 +109,8 @@ sed -i '10,$d' /home/idib57/idib57798/scripts/sbatch/sbatch.1h.cpt1
 done
 ```
 
+<br/><br/>
+
 Now we merge all the MAF files using the function `merge_mafs`.
 
 ```
@@ -119,6 +121,7 @@ files=dir(pattern=".maf$")maf=merge_mafs(files)
 maf=merge_mafs(files)
 ```
 
+<br/><br/>
 
 The function `tcgaCompare` uses mutation load from TCGA [MC3](https://gdc.cancer.gov/about-data/publications/mc3-2017) for comparing muttaion burden against 33 TCGA cohorts. 
 In this particular case we are only interested in the TMB of our samples:
