@@ -64,7 +64,7 @@ topTable(fit, coef=ncol(design))
 write.table(v$E,file = "counts_normalized.txt", sep = "\t") 
 ```
 
-![no normalized](https://github.com/ABedmar/radon-project/blob/main/images/no_norm.png=250x250)
+img src="https://github.com/ABedmar/radon-project/blob/main/images/no_norm.png" width="100" height="100">
 <p align="center">
     Not normalized samples
 </p>
