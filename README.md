@@ -179,6 +179,8 @@ done
 Now we merge all the MAF files using the function `merge_mafs`.
 
 ```
+#module load gcc/8.1.0 pcre2/10.35 R/4.0.3
+
 setwd("/slgpfs/projects/idib57/giancarlo/radon/WES/vep_merged_filtered_nopolimorph")
 library(maftools)
 
@@ -192,12 +194,6 @@ The function `tcgaCompare` uses mutation load from TCGA [MC3](https://gdc.cancer
 In this particular case we are only interested in the TMB of our samples:
 
 ```
-#module load gcc/8.1.0 pcre2/10.35 R/4.0.3
-
-library(maftools)
-files=dir(pattern=".maf$")
-maf=merge_mafs(files)
-
 laml.mutload = tcgaCompare(maf = maf, cohortName = 'Radon-LAML', logscale = TRUE, capture_size = 50)
 
 rb=(laml.mutload$mutation_burden_perSample)
