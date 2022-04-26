@@ -182,7 +182,7 @@ Now we merge all the MAF files using the function `merge_mafs`.
 setwd("/slgpfs/projects/idib57/giancarlo/radon/WES/vep_merged_filtered_nopolimorph")
 library(maftools)
 
-files=dir(pattern=".maf$")maf=merge_mafs(files)
+files=dir(pattern=".maf$")
 maf=merge_mafs(files)
 ```
 
