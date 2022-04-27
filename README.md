@@ -181,7 +181,7 @@ Now we merge all the MAF files using the function `merge_mafs`.
 ```
 #module load gcc/8.1.0 pcre2/10.35 R/4.0.3
 
-setwd("/slgpfs/projects/idib57/giancarlo/radon/WES/vep_merged_filtered_nopolimorph")
+setwd("/slgpfs/projects/idib57/giancarlo/radon/WES/vep_merged_filtered_norm.SeqOIA")
 library(maftools)
 
 files=dir(pattern=".maf$")
@@ -196,8 +196,8 @@ In this particular case we are only interested in the TMB of our samples:
 ```
 laml.mutload = tcgaCompare(maf = maf, cohortName = 'Radon-LAML', logscale = TRUE, capture_size = 50)
 
-rb=(laml.mutload$mutation_burden_perSample)
-rb= rb[rb$cohort == "Radon-LAML",]
+rtmb=(laml.mutload$mutation_burden_perSample)
+rtmb= rtmb[rtmb$cohort == "Radon-LAML",]
 ```
 
-`rb` is a table containing all samples and their TMB.
+`rtmb` is a table containing all samples and their TMB.
