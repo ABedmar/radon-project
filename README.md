@@ -179,7 +179,7 @@ done
 Now we merge all the MAF files using the function `merge_mafs`.
 
 ```
-#module load gcc/8.1.0 pcre2/10.35 R/4.0.3
+# module load gcc/8.1.0 pcre2/10.35 R/4.0.3
 
 setwd("/slgpfs/projects/idib57/giancarlo/radon/WES/vep_merged_filtered_norm.SeqOIA")
 library(maftools)
