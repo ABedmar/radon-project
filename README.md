@@ -119,19 +119,7 @@ write.table(v$E,file = "counts_normalized.txt", sep = "\t")
 
 
 <p align="center">
-    <img src="https://github.com/ABedmar/radon-project/blob/main/images/no_norm.png" width="900" height="350">
-</p>
-<p align="center">
-    Not normalized samples
-</p>
-
-<br/><br/>
-
-<p align="center">
-    <img src="https://github.com/ABedmar/radon-project/blob/main/images/norm.png" width="900" height="350">
-</p>
-<p align="center">
-    Normalized samples
+    <img src="https://github.com/ABedmar/radon-project/blob/main/images/normalization.png" width="900" height="350">
 </p>
 
 <br/><br/>
